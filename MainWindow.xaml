@@ -1,0 +1,16 @@
+﻿<Window x:Class="FastCypher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastCypher"
+        mc:Ignorable="d"
+        Title="Fast Cypher" Height="150" Width="525">
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap" Text="Encrypts or decrypts files in current folder, and subfolder when selected 'Recusive' flag"/>
+        <CheckBox x:Name="cbRecursive" Content="Recursive"/>
+        <PasswordBox x:Name="pb"></PasswordBox>
+        <Button x:Name="bEnc" Content="Let's encipher." Height="30" Click="bEnc_Click"/>
+        <Button x:Name="bDec" Content="Let's decipher." Height="30" Click="bDec_Click"/>        
+    </StackPanel>
+</Window>
